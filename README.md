@@ -639,7 +639,7 @@ console.log(data);
 
 ### Document Library
 <!-- Add screenshot here -->
-![Document Library](frontend\public\image.png)
+![Document Library](./frontend/public/imgae.png)
 
 *Grid view of all uploaded documents*
 
@@ -710,7 +710,7 @@ PORT=5001
 
 ```bash
 cd frontend
-npx shadcn@latest add button card toast input label badge alert dialog
+npx shadcn@latest add button card sonner input label badge alert dialog
 ```
 
 ---
