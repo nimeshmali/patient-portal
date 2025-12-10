@@ -420,15 +420,6 @@ Invalid File Type (400):
 }
 ```
 
-Duplicate File (409):
-```json
-{
-  "success": false,
-  "error": "DUPLICATE_FILE",
-  "message": "A file with this name already exists"
-}
-```
-
 #### 2. Get All Documents
 
 **GET** `/documents`
