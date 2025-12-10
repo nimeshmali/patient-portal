@@ -358,14 +358,8 @@ Open your browser and navigate to:
 ---
 
 <a id="api-documentation"></a>
-<a id="example-api-calls"></a>
-## Example API Calls
+## API Documentation
 
-<a id="screenshots"></a>
-## Screenshots
-
-<a id="environment-variables"></a>
-## Environment Variables
 
 ### Base URL
 ```
@@ -526,7 +520,7 @@ Delete Failed (500):
 ```
 
 ---
-
+<a id="example-api-calls"></a>
 ## 🧪 Example API Calls
 
 ### Using cURL
@@ -630,7 +624,7 @@ console.log(data);
 3. Send
 
 ---
-
+<a id="screenshots"></a>
 ## 📸 Screenshots
 
 ### Landing Page
@@ -659,7 +653,7 @@ console.log(data);
 *Grid view of all uploaded documents*
 
 ---
-
+<a id="environment-variables"></a>
 ## 🔧 Environment Variables
 
 ### Backend (.env)
