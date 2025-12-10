@@ -15,22 +15,24 @@ export class DocumentController {
                 throw new AppError(400, ErrorCodes.INVALID_REQUEST, 'No file uploaded');
             }
 
-            // Check for duplicate filename (original name)
-            const existingDoc = await DocumentModel.findByFilename(file.originalname);
-            if (existingDoc) {
-                // Delete the uploaded file since it's a duplicate
-                fs.unlinkSync(file.path);
-                throw new AppError(
-                    409,
-                    ErrorCodes.DUPLICATE_FILE,
-                    'A file with this name already exists'
-                );
+            // Allow duplicate uploads by generating a unique display filename.
+            // The stored filepath (on disk) will remain the multer-generated filename
+            // (req.file.filename) so files don't collide on disk.
+            const originalName = file.originalname;
+            const parsed = path.parse(originalName);
+
+            let displayName = originalName;
+            let counter = 1;
+            // Loop until we find a filename that doesn't exist in DB
+            while (await DocumentModel.findByFilename(displayName)) {
+                displayName = `${parsed.name} (${counter})${parsed.ext}`;
+                counter += 1;
             }
 
-            // Save document metadata to database
+            // Save document metadata to database using the unique display name
             const document = await DocumentModel.create({
-                filename: file.originalname,
-                filepath: file.filename, // Store the unique filename
+                filename: displayName,
+                filepath: file.filename, // stored filename on disk
                 filesize: file.size,
             });
 

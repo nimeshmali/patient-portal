@@ -1,13 +1,23 @@
-import "./App.css"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Toaster } from '@/components/ui/sonner';
+import Layout from '@/components/layout/Layout';
+import Home from '@/pages/Home';
+import UploadDocument from '@/pages/UploadDocument';
+import ViewDocuments from '@/pages/ViewDocuments';
+import "./App.css";
 
 function App() {
-
   return (
-    <div className='flex items-center justify-center min-h-screen bg-gray-100'>
-      <div className='w-[300px] h-[300px] bg-red-600'>
-        <h1 className='text-2xl font-bold'>Hello</h1>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="upload" element={<UploadDocument />} />
+          <Route path="documents" element={<ViewDocuments />} />
+        </Route>
+      </Routes>
+      <Toaster />
+    </BrowserRouter>
   );
 }
 
