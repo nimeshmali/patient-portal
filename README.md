@@ -639,7 +639,7 @@ console.log(data);
 
 ### Document Library
 <!-- Add screenshot here -->
-![Document Library](./frontend/public/imgae.png)
+![Document Library](./frontend/public/image.png)
 
 *Grid view of all uploaded documents*
 
