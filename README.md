@@ -11,7 +11,7 @@ A modern, full-stack web application for managing medical documents. Patients ca
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
+- [Installation & Setup](#installation-and-setup)
 - [Running the Application](#running-the-application)
 - [API Documentation](#api-documentation)
 - [Example API Calls](#example-api-calls)
@@ -20,6 +20,7 @@ A modern, full-stack web application for managing medical documents. Patients ca
 
 ---
 
+<a id="project-overview"></a>
 ## 🎯 Project Overview
 
 Patient Portal is a healthcare document management platform that enables users to:
@@ -42,6 +43,7 @@ The application features a modern UI built with React and shadcn/ui components, 
 
 ---
 
+<a id="features"></a>
 ## ✨ Features
 
 ### Document Management
@@ -66,6 +68,7 @@ The application features a modern UI built with React and shadcn/ui components, 
 
 ---
 
+<a id="tech-stack"></a>
 ## 🛠 Tech Stack
 
 ### Frontend
@@ -106,6 +109,7 @@ The application features a modern UI built with React and shadcn/ui components, 
 
 ---
 
+<a id="project-structure"></a>
 ## 📁 Project Structure
 
 ```
@@ -170,6 +174,7 @@ patient-portal/
 
 ---
 
+<a id="prerequisites"></a>
 ## 📦 Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -181,6 +186,7 @@ Before you begin, ensure you have the following installed:
 
 ---
 
+<a id="installation-and-setup"></a>
 ## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
@@ -308,6 +314,7 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 ---
 
+<a id="running-the-application"></a>
 ## ▶️ Running the Application
 
 ### Start Backend Server
@@ -350,7 +357,15 @@ Open your browser and navigate to:
 
 ---
 
-## 📡 API Documentation
+<a id="api-documentation"></a>
+<a id="example-api-calls"></a>
+## Example API Calls
+
+<a id="screenshots"></a>
+## Screenshots
+
+<a id="environment-variables"></a>
+## Environment Variables
 
 ### Base URL
 ```
